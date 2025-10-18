@@ -1,0 +1,28 @@
+# Python-generated files
+**/__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.ruff_cache
+.mypy_cache
+.idea
+
+# Virtual environments
+.venv
+test
+
+a002_saved_history/*
+
+!a002_saved_history/a001_models
+a002_saved_history/a001_models/*
+!a002_saved_history/a002_vali_results
+a002_saved_history/a002_vali_results/*
+!a002_saved_history/a003_tensorboard
+a002_saved_history/a003_tensorboard/*
+!a002_saved_history/a004_tensorboard_valid
+a002_saved_history/a004_tensorboard_valid/*
+
+!*.gitkeep
+

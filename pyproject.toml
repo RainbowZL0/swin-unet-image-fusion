@@ -1,0 +1,32 @@
+[project]
+name = "a000-mkx"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "colorama>=0.4.6",
+    "einops>=0.8.1",
+    "kornia>=0.8.1",
+    "notebook>=7.4.7",
+    "opencv-python>=4.12.0.88",
+    "seaborn>=0.13.2",
+    "torch>=2.8.0",
+    "torchvision>=0.23.0",
+    "tqdm>=4.67.1",
+]
+
+
+[[tool.uv.index]]
+name = "pytorch_cu130"
+url = "https://download.pytorch.org/whl/cu130"
+explicit = true
+
+
+[tool.uv.sources]
+torch = [{ index = "pytorch_cu130" }]
+torchaudio = [{ index = "pytorch_cu130" }]
+torchvision = [{ index = "pytorch_cu130" }]
+
+[tool.ruff]
+extend = "D:/_Search/APPTools/vscode/ruff.toml"
